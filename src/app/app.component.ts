@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learn';
+  selectitem = 'Book';
+  items = ['item1' , 'item2']
+  additempush(newitem : string){
+    this.items.push(newitem);
+  }
+
+
+
+
+
+
+
+
 }
