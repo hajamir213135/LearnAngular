@@ -1,7 +1,24 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { AppComponent } from './app.component';
+import { CountComponent } from './count/count.component';
+import { FormsComponent } from './forms/forms.component';
+import { HomeComponent } from './home/home.component';
+import { ObsComponent } from './obs/obs.component';
+import { PagenotComponent } from './pagenot/pagenot.component';
+import { TestserverComponent } from './testserver/testserver.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'' , component:HomeComponent },
+  {path:'test' , component: TestserverComponent },
+  {path:'rxjs' , component: ObsComponent },
+  {path:'home' , component:HomeComponent },
+  {path:'contact-us' , component:AboutComponent },
+  {path:'form' , component:FormsComponent },
+  {path:'count' , component:CountComponent },
+  {path:'**', component:PagenotComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

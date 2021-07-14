@@ -11,13 +11,8 @@ export class AppComponent {
   items = ['item1' , 'item2']
   additempush(newitem : string){
     this.items.push(newitem);
+
+    
   }
-
-
-
-
-
-
-
 
 }

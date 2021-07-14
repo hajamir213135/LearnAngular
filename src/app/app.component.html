@@ -1,4 +1,4 @@
-<app-input [item] = "selectitem"></app-input>
+<!-- <app-input [item] = "selectitem"></app-input>
 <br>
 <br>
 <app-output (itemout) = "additempush($event)"></app-output>
@@ -8,11 +8,42 @@
 <br>
 <ul>
     <li *ngFor="let amir for items">{{amir}}</li>
-</ul>
-
-
-
-
-
-
+</ul> -->
+ <!-- ////////////////////////////////////////////  Head -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/home" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-us">contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/test">Test Server</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rxjs">Rxjs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/form">Form</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/count">count</a>
+        </li>        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 <router-outlet></router-outlet>
+<!-- ///////////////////////////////////////////////// end menu -->
+
+<!-- //////////////////////////////// Footer -->
+
+  <!-- ////////////////////////////// End footer -->
