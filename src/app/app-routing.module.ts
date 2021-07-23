@@ -7,6 +7,8 @@ import { FormsComponent } from './forms/forms.component';
 import { HomeComponent } from './home/home.component';
 import { ObsComponent } from './obs/obs.component';
 import { PagenotComponent } from './pagenot/pagenot.component';
+import { SendemailComponent } from './sendemail/sendemail.component';
+import { SentemailComponent } from './sentemail/sentemail.component';
 import { TestserverComponent } from './testserver/testserver.component';
 
 const routes: Routes = [
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path:'rxjs' , component: ObsComponent },
   {path:'home' , component:HomeComponent },
   {path:'contact-us' , component:AboutComponent },
+  {path:'sendemail' , component:SendemailComponent },
+  {path:'sentemail' , component:SentemailComponent },
   {path:'form' , component:FormsComponent },
   {path:'count' , component:CountComponent },
   {path:'**', component:PagenotComponent },

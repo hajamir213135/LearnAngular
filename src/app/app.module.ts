@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
@@ -13,6 +12,9 @@ import { PagenotComponent } from './pagenot/pagenot.component';
 import { ObsComponent } from './obs/obs.component';
 import { FormsComponent } from './forms/forms.component';
 import { CountComponent } from './count/count.component';
+import { SendemailComponent } from './sendemail/sendemail.component';
+import { SentemailComponent } from './sentemail/sentemail.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,13 @@ import { CountComponent } from './count/count.component';
     ObsComponent,
     FormsComponent,
     CountComponent,
+    SendemailComponent,
+    SentemailComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]
