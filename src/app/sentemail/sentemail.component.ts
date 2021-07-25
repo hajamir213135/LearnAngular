@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailService } from '../services/email.service';
 
 @Component({
   selector: 'app-sentemail',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SentemailComponent implements OnInit {
 
-  constructor() { }
+  emails: { email: string; subject: string; text: string; }[] = [];
 
-  ngOnInit(): void {
+  constructor(private emailService: EmailService) {
+    this.emails = this.emailService.list();
+    console.log(this.emailService.list());
+  }
+
+  ngOnInit(): void { 
   }
 
 }

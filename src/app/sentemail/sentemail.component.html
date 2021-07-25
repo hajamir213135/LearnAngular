@@ -4,15 +4,15 @@
         <th scope="col">#</th>
         <th scope="col">Send to: </th>
         <th scope="col">Subject: </th>
-        <th scope="col">Describtion: </th>
+        <th scope="col">Text: </th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td></td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let e of emails">
+        <th scope="row">-</th>
+        <td>{{ e.email }}</td>
+        <td>{{ e.subject }}</td>
+        <td>{{ e.text }}</td>
       </tr>
     </tbody>
   </table>

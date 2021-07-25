@@ -1,0 +1,1 @@
+export let emails = [{ email: 'asdf@gmail.com', subject: 'asdf', text: 'lorem ...'}];
