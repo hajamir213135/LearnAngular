@@ -15,6 +15,7 @@ import { CountComponent } from './count/count.component';
 import { SendemailComponent } from './sendemail/sendemail.component';
 import { SentemailComponent } from './sentemail/sentemail.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]

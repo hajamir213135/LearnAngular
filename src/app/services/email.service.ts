@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {emails} from './emails';
 
@@ -6,7 +7,11 @@ import {emails} from './emails';
 })
 export class EmailService {
 
-  constructor() {
+  constructor(private http: HttpClient) {
+  }
+
+  getemail(){
+    return
   }
 
   send(email: { email: string; subject: string; text: string}) {
