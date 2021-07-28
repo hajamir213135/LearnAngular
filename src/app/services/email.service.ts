@@ -7,11 +7,7 @@ import {emails} from './emails';
 })
 export class EmailService {
 
-  constructor(private http: HttpClient) {
-  }
-
-  getemail(){
-    return
+  constructor() {
   }
 
   send(email: { email: string; subject: string; text: string}) {
