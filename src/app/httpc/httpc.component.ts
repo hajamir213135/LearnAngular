@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HttpcComponent implements OnInit {
   url='https://jsonplaceholder.typicode.com/users';
-
+  items=[];
   constructor( private http:HttpClient) {
     this.http.get(this.url).toPromise().then(data =>{
       console.log(data);
+
+      for ( let value in data )
+        if(data.hasOwnProperty(value))
+          this.items.push(data[value]);      
     })
    }
 

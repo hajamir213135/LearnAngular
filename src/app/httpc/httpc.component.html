@@ -1,1 +1,19 @@
-<p>httpc works!</p>
+<p class="center">httpc works!</p>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Email: </th>
+        <th scope="col">Name: </th>
+        <th scope="col">Phone: </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <th scope="row">-</th>
+        <td>{{ item.email }}</td>
+        <td> {{ item.name }} </td>
+        <td> {{ item.phone }} </td>
+      </tr>
+    </tbody>
+  </table>
