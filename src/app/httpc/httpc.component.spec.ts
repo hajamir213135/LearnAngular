@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HttpComponent } from './http.component';
+import { HttpcComponent } from './httpc.component';
 
-describe('HttpComponent', () => {
-  let component: HttpComponent;
-  let fixture: ComponentFixture<HttpComponent>;
+describe('HttpcComponent', () => {
+  let component: HttpcComponent;
+  let fixture: ComponentFixture<HttpcComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HttpComponent ]
+      declarations: [ HttpcComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HttpComponent);
+    fixture = TestBed.createComponent(HttpcComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,10 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class HttpService {
+  constructor( private http:HttpClient ){
+    
+   }
 
-  constructor(private http: HttpClient) { }
-
-  public get(){
-    return this.http.get("http://jsonplaceholder.typicode.com/posts");
-  }
 }
