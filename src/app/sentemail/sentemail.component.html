@@ -8,11 +8,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let e of emails">
-        <th scope="row">-</th>
-        <td>{{ e.email }}</td>
-        <td>{{ e.subject }}</td>
-        <td>{{ e.text }}</td>
+      <tr *ngFor="let p of posts">
+        <th scope="row"> {{p.id}} </th>
+        <td>{{ p.title }}</td>
+        <td>{{ p.body }}</td>
+        <td>{{ p.userId }}</td>
       </tr>
     </tbody>
   </table>

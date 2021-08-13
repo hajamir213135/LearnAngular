@@ -1,1 +1,6 @@
-<p>Heloo</p>
+<form [formGroup]="postForm">
+    <input type="text" name="title"  formControlName="title" placeholder="enter title" width="50%" />
+    <input type="text" name="body" formControlName="body" placeholder="body" width="50%" />
+    <input type="number" name="userId" formControlName="userId" placeholder="User ID" width="50%" />
+    <button (click)="handleSubmit()">Submit</button>
+</form> 
