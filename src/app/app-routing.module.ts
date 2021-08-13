@@ -6,6 +6,7 @@ import { CountComponent } from './count/count.component';
 import { FormsComponent } from './forms/forms.component';
 import { HomeComponent } from './home/home.component';
 import { HttpcComponent } from './httpc/httpc.component';
+import { HttppostComponent } from './httppost/httppost.component';
 import { ObsComponent } from './obs/obs.component';
 import { PagenotComponent } from './pagenot/pagenot.component';
 import { SendemailComponent } from './sendemail/sendemail.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'sentemail' , component:SentemailComponent },
   {path:'form' , component:FormsComponent },
   {path:'httpclient' , component:HttpcComponent  },
+  {path:'httppost' , component:HttppostComponent  },
   {path:'count' , component:CountComponent },
   {path:'**', component:PagenotComponent },
 ];

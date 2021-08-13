@@ -17,6 +17,7 @@ import { SentemailComponent } from './sentemail/sentemail.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpcComponent } from './httpc/httpc.component';
+import { HttppostComponent } from './httppost/httppost.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HttpcComponent } from './httpc/httpc.component';
     SendemailComponent,
     SentemailComponent,
     HttpcComponent,
+    HttppostComponent,
   ],
   imports: [
     BrowserModule,
